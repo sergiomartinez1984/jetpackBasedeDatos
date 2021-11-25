@@ -292,7 +292,7 @@ fun ContactScreen() {
     ) {
 
         Text(
-            text = "Contact Screen",
+            text = "Contacto",
             fontWeight = FontWeight.Bold,
             color = Color.Black,
             fontSize = 30.sp,
