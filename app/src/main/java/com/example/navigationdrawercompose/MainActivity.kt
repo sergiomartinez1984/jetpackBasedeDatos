@@ -171,14 +171,14 @@ fun Drawer(scope: CoroutineScope, scaffoldState: ScaffoldState, navController: N
 
 @Composable
 fun DrawerItem(item: NavegacionItem, selected: Boolean, onItemClick: (NavegacionItem) -> Unit) {
-    val background = if (selected) R.color.purple_200 else android.R.color.transparent
+    val background = if (selected) Color.Red else Color.Transparent
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = Modifier
             .fillMaxWidth()
             .clickable { onItemClick(item) }
             .height(45.dp)
-            .background(colorResource(id = background))
+            .background(background)
             .padding(start = 10.dp)
     ) {
 
